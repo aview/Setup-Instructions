@@ -1,0 +1,274 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../override.css" type="text/css"><meta name="keywords" content="CollaborationObject,com.amrita.edu.collaboration.CollaborationObject,DATE,NUMERIC,syncEventCount,type,addValue,closeCollaborationObject,connectCollaborationObject,destroy,flush,getCollaborationService,getData,isConnected,lock,onSend,removeAllValues,removeOnChange,removeOnChangeProperty,removeOnClear,removeOnDeleteProperty,removeOnSend,removeOnSync,removeValue,resetConnection,send,setOnChange,setOnChangeProperty,setOnClear,setOnDeleteProperty,setOnSend,setOnSync,setValue,unlock"><title>com.amrita.edu.collaboration.CollaborationObject</title></head><body><script language="javascript" type="text/javascript" src="../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'CollaborationObject - API Documentation';
+				var baseRef = '../../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">API Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../../package-summary.html" onclick="loadClassListFrame('../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../class-summary.html" onclick="loadClassListFrame('../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../all-index-A.html" onclick="loadClassListFrame('../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../index.html?com/amrita/edu/collaboration/CollaborationObject.html&amp;com/amrita/edu/collaboration/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">CollaborationObject</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("CollaborationObject"); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.amrita.edu.collaboration</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  CollaborationObject</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">CollaborationObject  <img src="../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> Object</td></tr></table><p></p><p></p><p></p>
+	 Provides the connection to the remote CollaborationObject and helps to update the collaboration data such as chat messages or whiteboard drawings
+	 
+	 This also provides functionality to recieve notifications when the collaboration data is modified by any of the connected clients
+	 
+	 collaborationService should be used to aquire this object.
+	 
+	 <p></p><p><span class="classHeaderTableLabel">See also</span></p><div class="seeAlso">modules.common.collaboration.CollaborationService</div><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#syncEventCount" class="signatureLink">syncEventCount</a> : uint<div class="summaryTableDescription">[read-only] 
+		 Return the count that the Collaboration Object sync hadler get excecuted.</div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#CollaborationObject()" class="signatureLink">CollaborationObject</a>(lock:ConstructorLock)</div><div class="summaryTableDescription">
+		 The constructor.</div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addValue()" class="signatureLink">addValue</a>(propertyValue:Object):void</div><div class="summaryTableDescription">
+		 Adds a new value on the remote Collaboration Object
+		 
+		 This would trigger the onSync and onChange notifications on all connected clients.</div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#destroy()" class="signatureLink">destroy</a>():void</div><div class="summaryTableDescription"> 
+		 Function to close the collaboration object.</div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#flush()" class="signatureLink">flush</a>():void</div><div class="summaryTableDescription">
+		 Refer the lock() method's document.</div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getData()" class="signatureLink">getData</a>():Object</div><div class="summaryTableDescription">
+		 Return the Collaboration object's data object.</div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#lock()" class="signatureLink">lock</a>():void</div><div class="summaryTableDescription">
+		 If the module wants to update many Collaboration properties at once, 
+		 and wants all of these changes to be notified to other modules in a single change event,
+		 the mechanism of locking can be used.</div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#onSend()" class="signatureLink">onSend</a>(functionName:String, parameters:Object):void</div><div class="summaryTableDescription">
+		 Function used to invoke a remote method through the NetConnection object
+		 </div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeAllValues()" class="signatureLink">removeAllValues</a>():void</div><div class="summaryTableDescription">
+		 Removes all of Property values from the remote CollaborationObject
+		 
+		 This will invoke the onClear event on the connected clients.</div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeOnChange()" class="signatureLink">removeOnChange</a>():void</div><div class="summaryTableDescription">
+		 Unregisters the handler function for change notifications.</div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeOnChangeProperty()" class="signatureLink">removeOnChangeProperty</a>(propertyName:String):void</div><div class="summaryTableDescription">
+		 Unregisters the handler function for change notifications for a given property.</div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeOnClear()" class="signatureLink">removeOnClear</a>():void</div><div class="summaryTableDescription">
+		 Unregisters the handler function for clear notifications.</div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeOnDeleteProperty()" class="signatureLink">removeOnDeleteProperty</a>(propertyName:String):void</div><div class="summaryTableDescription">
+		 Unregisters the handler function for delete notifications for a given property.</div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeOnSend()" class="signatureLink">removeOnSend</a>(functionName:String):void</div><div class="summaryTableDescription">
+		 Delete collaboration object
+		 </div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeOnSync()" class="signatureLink">removeOnSync</a>():void</div><div class="summaryTableDescription">
+		 Unregisters the handler function for data notifications.</div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeValue()" class="signatureLink">removeValue</a>(propertyName:String):void</div><div class="summaryTableDescription">
+		 Removes the property on the remote Collaboration object
+		 
+		 This would trigger the onDeleteProperty notifications on all connected clients.</div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#resetConnection()" class="signatureLink">resetConnection</a>(connection:NetConnection):void</div><div class="summaryTableDescription"></div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#send()" class="signatureLink">send</a>(functionName:String, parameters:Object):void</div><div class="summaryTableDescription">
+		 collaboration object.send
+		 </div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setOnChange()" class="signatureLink">setOnChange</a>(callback:Function):void</div><div class="summaryTableDescription">
+		 Used to register for getting notifications when a new Property is added to the collaboration data or any exisiting Property is modified by any of the connected clients.</div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setOnChangeProperty()" class="signatureLink">setOnChangeProperty</a>(propertyName:String, callback:Function):void</div><div class="summaryTableDescription">
+		 Used to register for getting notifications when a given Property is modified by any of the connected clients.</div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setOnClear()" class="signatureLink">setOnClear</a>(callback:Function):void</div><div class="summaryTableDescription">
+		 Used to register for getting notifications when the collaboration data is cleared by any of the connected clients.</div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setOnDeleteProperty()" class="signatureLink">setOnDeleteProperty</a>(propertyName:String, callback:Function):void</div><div class="summaryTableDescription">
+		 Used to register for getting notifications when a given Property is deleted by any of the connected clients.</div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setOnSend()" class="signatureLink">setOnSend</a>(functionName:String, callback:Function):void</div><div class="summaryTableDescription">
+		 Set collaboration object
+		 </div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setOnSync()" class="signatureLink">setOnSync</a>(callback:Function):void</div><div class="summaryTableDescription">
+		 Used to register for getting notifications when the collaboration data is modified by any of the connected clients.</div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setValue()" class="signatureLink">setValue</a>(propertyName:String, propertyValue:Object):void</div><div class="summaryTableDescription">
+		 Sets the value of a property on the remote Collaboration object.</div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#unlock()" class="signatureLink">unlock</a>():void</div><div class="summaryTableDescription">
+		 Refer the lock() method's document.</div></td><td class="summaryTableOwnerCol">CollaborationObject</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="syncEventCount"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">syncEventCount</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>syncEventCount:uint</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Return the count that the Collaboration Object sync hadler get excecuted.
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get syncEventCount():uint</code><br/></div><a name="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><a name="CollaborationObject()"></a><a name="CollaborationObject(com.amrita.edu.collaboration.ConstructorLock)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">CollaborationObject</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function CollaborationObject(lock:ConstructorLock)</code><p></p><p>
+		 The constructor. Should not be used. Please use CollaborationService.connectCollaborationObject instead. Usage of this constructor would throw an error.
+		 </p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">lock</span>:ConstructorLock</code></td></tr></table></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="addValue()"></a><a name="addValue(Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">addValue</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function addValue(propertyValue:Object):void</code><p></p><p></p><p>
+		 Adds a new value on the remote Collaboration Object
+		 
+		 This would trigger the onSync and onChange notifications on all connected clients.
+		 
+		 <b>This method should be used only for the CollaborationObjects which are setup with AutoPropertyName</b>
+		 
+		 Based on the setup, either a date based or a numeric automatic Property name is generated on the server and is attached to the Property value.
+		 This is done by creating a wrapper object and the automatic Propertyname is added to the object as autoPropertyName attribute and the propertyValue is added as propertyValue attribute.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">propertyValue</span>:Object</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody">The following code gives an example use case
+		 
+		 <div class="listing"><pre>
+                 var collabObj:CollaborationObject = collaborationService.connectCollaborationObject("Chat",AutoPropertyName.DATE);
+             collabObj.setOnChange(changeHandler);
+         
+                 //This method is adding the new chat message to the remote CollaboraitonObject
+                 public function sendMessageServer(message:String):void
+                 {
+                     collabObj.addValue(message);
+                 }
+         
+                 //The change handler is getting the message out of the wrapper object by accessing the propertyValue attribute.
+                 public function changeHandler(value:Object):void
+                 {
+                     //Do something with the new or modified value
+                     chatComp.messageList.addItem(value.propertyValue); //Adding the new chat message to the list
+                 }
+                 
+         </pre></div>
+		 </div></div><a name="destroy()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">destroy</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function destroy():void</code><p></p><p></p><p> 
+		 Function to close the collaboration object. 
+		 </p></div><a name="flush()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">flush</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function flush():void</code><p></p><p></p><p>
+		 Refer the lock() method's document.
+		 
+		 This method commits the pending changes to the Collaboration object and causes other partcipants to be notified.
+		 </p></div><a name="getData()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getData</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getData():Object</code><p></p><p></p><p>
+		 Return the Collaboration object's data object. 
+		 
+		 This function can be used to check values of different properties in the Collaboration object.
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Object</code></td></tr></table></div><a name="lock()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">lock</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function lock():void</code><p></p><p></p><p>
+		 If the module wants to update many Collaboration properties at once, 
+		 and wants all of these changes to be notified to other modules in a single change event,
+		 the mechanism of locking can be used. This mechanism has four steps.
+		 
+		 
+		 1. Lock: The first step is to lock the collaboration object by calling lock() method, which prevents any more updates to it
+		 2. Update: Make the necessary changes to the Collaboration object
+		 3. Flush: The second step is to commit the changes, at this point all these changes are sent to all the other subscribers
+		 4. Unlock: Unlock the Collaboration object so that others can update it as well.
+		 
+		 </p></div><a name="onSend()"></a><a name="onSend(String,Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">onSend</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function onSend(functionName:String, parameters:Object):void</code><p></p><p></p><p>
+		 Function used to invoke a remote method through the NetConnection object
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">functionName</span>:String</code> &mdash; of type String
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">parameters</span>:Object</code> &mdash; of type Object
+		 </td></tr></table></p></div><a name="removeAllValues()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeAllValues</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeAllValues():void</code><p></p><p></p><p>
+		 Removes all of Property values from the remote CollaborationObject
+		 
+		 This will invoke the onClear event on the connected clients.
+		 
+		 Ex: It would be useful when the client wants to wipe out white board or clear entire chat history
+		 
+		 </p></div><a name="removeOnChange()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeOnChange</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeOnChange():void</code><p></p><p></p><p>
+		 Unregisters the handler function for change notifications.
+		 </p></div><a name="removeOnChangeProperty()"></a><a name="removeOnChangeProperty(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeOnChangeProperty</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeOnChangeProperty(propertyName:String):void</code><p></p><p></p><p>
+		 Unregisters the handler function for change notifications for a given property.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">propertyName</span>:String</code> &mdash; the name of the parameter for which the notifications are removed
+		 </td></tr></table></p></div><a name="removeOnClear()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeOnClear</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeOnClear():void</code><p></p><p></p><p>
+		 Unregisters the handler function for clear notifications.
+		 </p></div><a name="removeOnDeleteProperty()"></a><a name="removeOnDeleteProperty(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeOnDeleteProperty</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeOnDeleteProperty(propertyName:String):void</code><p></p><p></p><p>
+		 Unregisters the handler function for delete notifications for a given property.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">propertyName</span>:String</code> &mdash; the name of the parameter for which the notifications are removed
+		 </td></tr></table></p></div><a name="removeOnSend()"></a><a name="removeOnSend(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeOnSend</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeOnSend(functionName:String):void</code><p></p><p></p><p>
+		 Delete collaboration object
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">functionName</span>:String</code> &mdash; of type String
+		 </td></tr></table></p></div><a name="removeOnSync()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeOnSync</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeOnSync():void</code><p></p><p></p><p>
+		 Unregisters the handler function for data notifications.
+		 </p></div><a name="removeValue()"></a><a name="removeValue(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeValue</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeValue(propertyName:String):void</code><p></p><p></p><p>
+		 Removes the property on the remote Collaboration object
+		 
+		 This would trigger the onDeleteProperty notifications on all connected clients.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">propertyName</span>:String</code> &mdash; name of the property to be deleted such as a whiteboard shape or specific chat message
+		 </td></tr></table></p></div><a name="resetConnection()"></a><a name="resetConnection(flash.net.NetConnection)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">resetConnection</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function resetConnection(connection:NetConnection):void</code><p></p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">connection</span>:NetConnection</code></td></tr></table></p></div><a name="send()"></a><a name="send(String,Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">send</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function send(functionName:String, parameters:Object):void</code><p></p><p></p><p>
+		 collaboration object.send
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">functionName</span>:String</code> &mdash; of type String
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">parameters</span>:Object</code> &mdash; of type Object
+		 </td></tr></table></p></div><a name="setOnChange()"></a><a name="setOnChange(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setOnChange</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setOnChange(callback:Function):void</code><p></p><p></p><p>
+		 Used to register for getting notifications when a new Property is added to the collaboration data or any exisiting Property is modified by any of the connected clients.
+		 
+		 For Ex: This handler is useful to track when a new chat message is added or new white board shape is added.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">callback</span>:Function</code> &mdash; the handler function. The handler function should be a public function accepting a parameter of type Object as the new value of the property, and a parameter of type String as the name of the property
+		 
+		 The Object is the new Parameter Value or the modified Parameter value.
+		 
+		 </td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody">The following code gives an example use case
+		 
+		 <div class="listing"><pre>
+                 var collabObj:CollaborationObject = collaborationService.connectCollaborationObject("Chat",AutoPropertyName.DATE);
+             collabObj.setOnChange(changeHandler);
+         
+                 public function changeHandler(value:Object,propertyName:String):void
+                 {
+                     //Do something with the new or modified value
+                     chatComp.messageList.addItem(value.propertyValue); //Adding the new chat message to the list
+                 }
+                 
+         </pre></div>
+		 
+		 </div></div><a name="setOnChangeProperty()"></a><a name="setOnChangeProperty(String,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setOnChangeProperty</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setOnChangeProperty(propertyName:String, callback:Function):void</code><p></p><p></p><p>
+		 Used to register for getting notifications when a given Property is modified by any of the connected clients.
+		 
+		 For Ex: In a document sharing application, this handler is useful to track when a page is changed, or rotated or the pointer is moved etc
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">propertyName</span>:String</code> &mdash; the name of the parameter for which the notifications are desired
+		 
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">callback</span>:Function</code> &mdash; the handler function. The handler function should be a public function accepting a parameter of type Object
+		 
+		 The Object is the modified Parameter value.
+		 
+		 </td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody">The following code gives an example use case
+		 
+		 <div class="listing"><pre>
+                 var collabObj:CollaborationObject = collaborationService.connectCollaborationObject("DocumentSharing");
+             collabObj.setOnChangeProperty(pageNumber,pageNumberHandler);
+             collabObj.setOnChangeProperty(pointerPosition,pointerPositionHandler);
+         
+                 public function pageNumberHandler(newPageNumber:Object,propertyName:String):void
+                 {
+                     //Do something with the modified value
+                     docComp.setNewPage(newPageNumber); //Setting the new page
+                 }
+                 
+                 public function pointerPositionHandler(newPosition:Object,propertyName:String):void
+                 {
+                     //Do something with the modified value
+                     docComp.pointer.moveTo(newPosition); //Moving the pointer to new position
+                 }
+         </pre></div>
+		 
+		 </div></div><a name="setOnClear()"></a><a name="setOnClear(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setOnClear</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setOnClear(callback:Function):void</code><p></p><p></p><p>
+		 Used to register for getting notifications when the collaboration data is cleared by any of the connected clients. 
+		 
+		 Ex: This event is triggered when the chat history is completely cleared or when the whiteboard page is cleared
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">callback</span>:Function</code> &mdash; the handler function. The handler function should be a public function which accepts no parameters
+		 
+		 </td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody">The following code gives an example use case
+		 
+		 <div class="listing"><pre>
+                 var collabObj:CollaborationObject = collaborationService.connectCollaborationObject("Chat",AutoPropertyName.DATE);
+             collabObj.setOnClear(clearHandler);
+         
+                 public function clearHandler():void
+                 {
+                     //Do some cleanup.
+                     chatComp.messageList.removeAll(); //Removing all the historical chat messages from the list
+                 }
+                 
+         </pre></div>
+		 
+		 </div></div><a name="setOnDeleteProperty()"></a><a name="setOnDeleteProperty(String,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setOnDeleteProperty</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setOnDeleteProperty(propertyName:String, callback:Function):void</code><p></p><p></p><p>
+		 Used to register for getting notifications when a given Property is deleted by any of the connected clients.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">propertyName</span>:String</code> &mdash; the name of the parameter for which the notifications are desired
+		 
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">callback</span>:Function</code> &mdash; the handler function. The handler function should be a public function accepting propertyName:String parameter
+		 
+		 </td></tr></table></p></div><a name="setOnSend()"></a><a name="setOnSend(String,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setOnSend</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setOnSend(functionName:String, callback:Function):void</code><p></p><p></p><p>
+		 Set collaboration object
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">functionName</span>:String</code> &mdash; of type String.
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">callback</span>:Function</code> &mdash; of type Function.
+		 </td></tr></table></p></div><a name="setOnSync()"></a><a name="setOnSync(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setOnSync</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setOnSync(callback:Function):void</code><p></p><p></p><p>
+		 Used to register for getting notifications when the collaboration data is modified by any of the connected clients.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">callback</span>:Function</code> &mdash; the handler function. The handler function should be a public function accepting a parameter of type Object
+		 
+		 The Object is the actual complete collaboration object which exists on the server and gets modified by the other clients.
+		 
+		 </td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody">The following code gives an example use case
+		 
+		 <div class="listing"><pre>
+                 var collabObj:CollaborationObject = collaborationService.connectCollaborationObject("test");
+                 collabObj.setOnSync(collaborationHandler);
+         
+                 public function collaborationHandler(data:Object):void
+                 {
+                     //Do something with data ..
+                     this.currentValue.text = data.currentValue; //currentValue is the Parameter name. data.currentValue gives the corresponding parameter value.
+                 }
+                 
+         </pre></div>
+		 
+		 </div></div><a name="setValue()"></a><a name="setValue(String,Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setValue</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setValue(propertyName:String, propertyValue:Object):void</code><p></p><p></p><p>
+		 Sets the value of a property on the remote Collaboration object. 
+		 
+		 This would trigger the onSync, onChange and onChangeProperty notifications on all connected clients.
+		 
+		 This can be used to set the values of predetermined parameters such as document page number, document rotation, pointer position etc
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">propertyName</span>:String</code> &mdash; name of the property to be modified, such as page number
+		 
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">propertyValue</span>:Object</code> &mdash; new value of the property to be set. 
+		 
+		 </td></tr></table></p></div><a name="unlock()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">unlock</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function unlock():void</code><p></p><p></p><p>
+		 Refer the lock() method's document.
+		 
+		 This method removes the lock on the Collaboration object, allowing further updates on to it.
+		 </p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer></footer><br/>Sat Jun 21 2014, 03:53 PM +05:30  </center></div></body></html><!--<br/>Sat Jun 21 2014, 03:53 PM +05:30  -->
